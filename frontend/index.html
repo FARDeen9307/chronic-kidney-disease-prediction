@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chronic Kidney Disease Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Chronic Kidney Disease Predictor</h1>
+    <form id="ckdForm" class="form-grid">
+      <!-- Group fields in 2-column grid -->
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" name="age" required />
+      </div>
+
+      <div class="form-group">
+        <label for="bp">Blood Pressure (BP)</label>
+        <input type="number" name="bp" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sg">Specific Gravity (SG)</label>
+        <input type="number" step="0.01" name="sg" required />
+      </div>
+
+      <div class="form-group">
+        <label for="al">Albumin (AL)</label>
+        <input type="number" name="al" required />
+      </div>
+
+      <div class="form-group">
+        <label for="su">Sugar (SU)</label>
+        <input type="number" name="su" required />
+      </div>
+
+      <div class="form-group">
+        <label for="rbc">Red Blood Cells (RBC)</label>
+        <input type="number" name="rbc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pc">Pus Cell (PC)</label>
+        <input type="number" name="pc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pcc">Pus Cell Clumps (PCC)</label>
+        <input type="number" name="pcc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="ba">Bacteria (BA)</label>
+        <input type="number" name="ba" required />
+      </div>
+
+      <div class="form-group">
+        <label for="bgr">Blood Glucose Random (BGR)</label>
+        <input type="number" name="bgr" required />
+      </div>
+
+      <div class="form-group">
+        <label for="bu">Blood Urea (BU)</label>
+        <input type="number" name="bu" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sc">Serum Creatinine (SC)</label>
+        <input type="number" name="sc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="sod">Sodium (SOD)</label>
+        <input type="number" name="sod" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pot">Potassium (POT)</label>
+        <input type="number" name="pot" required />
+      </div>
+
+      <div class="form-group">
+        <label for="hemo">Hemoglobin (HEMO)</label>
+        <input type="number" name="hemo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pcv">Packed Cell Volume (PCV)</label>
+        <input type="number" name="pcv" required />
+      </div>
+
+      <div class="form-group">
+        <label for="wc">White Blood Cell Count (WBC)</label>
+        <input type="number" name="wc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="rc">Red Blood Cell Count (RC)</label>
+        <input type="number" name="rc" required />
+      </div>
+
+      <div class="form-group">
+        <label for="htn">Hypertension (HTN)</label>
+        <input type="number" name="htn" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dm">Diabetes Mellitus (DM)</label>
+        <input type="number" name="dm" required />
+      </div>
+
+      <div class="form-group">
+        <label for="cad">Coronary Artery Disease (CAD)</label>
+        <input type="number" name="cad" required />
+      </div>
+
+      <div class="form-group">
+        <label for="appet">Appetite (APPET)</label>
+        <input type="number" name="appet" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pe">Pedal Edema (PE)</label>
+        <input type="number" name="pe" required />
+      </div>
+
+      <div class="form-group">
+        <label for="ane">Anemia (ANE)</label>
+        <input type="number" name="ane" required />
+      </div>
+
+      <div class="form-button">
+        <button type="submit">Predict</button>
+      </div>
+    </form>
+
+    <div id="result" class="result-card"></div>
+
+    <!-- Pie chart canvas -->
+    <canvas id="pieChart" width="400" height="400" style="margin-top: 30px;"></canvas>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
