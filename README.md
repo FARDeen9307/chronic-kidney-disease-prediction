@@ -7,10 +7,7 @@ This project is a web-based application designed to predict the likelihood of Ch
 - [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [API Endpoint](#api-endpoint)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features
@@ -35,20 +32,29 @@ This project is a web-based application designed to predict the likelihood of Ch
 - Chart.js
 
 ## Project Structure
+
+```
 chronic-kidney-disease-prediction/
-├── app.py                         # Main Flask backend script
-├── requirements.txt               # Required Python packages
-├── README.md                      # Project documentation
-├── static/                        # Static assets
-│   ├── style.css                  # CSS styles for the frontend
-│   ├── script.js                  # JavaScript for interactivity
-│   └── background.jpg             # Optional background image
-├── templates/                     # HTML templates
-│   └── index.html                 # Main user interface
-├── model/                         # (Optional) Folder for storing trained model files
-│   └── ckd_model.pkl              # Trained machine learning model
-└── utils/                         # (Optional) Utility functions
-    └── preprocess.py              # Data preprocessing before prediction
+│
+├── app.py                   # Main Flask backend script
+├── requirements.txt         # Required Python packages
+├── README.md                # Project documentation
+│
+├── static/                  # Static assets
+│   ├── style.css            # CSS styles for the frontend
+│   ├── script.js            # JavaScript for interactivity
+│   └── background.jpg       # Optional background image
+│
+├── templates/               # HTML templates
+│   └── index.html           # Main user interface
+│
+├── model/                   # (Optional) Trained ML model
+│   └── ckd_model.pkl        # Trained model file
+│
+└── utils/                   # (Optional) Utility functions
+    └── preprocess.py        # Preprocessing logic
+```
+ # Data preprocessing before prediction
 ## Setup and Installation
 1. **Clone the repository:**
    ```bash
